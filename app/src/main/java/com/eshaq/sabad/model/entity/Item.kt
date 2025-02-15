@@ -10,5 +10,5 @@ class Item {
     lateinit var name:String
     lateinit var amount:String
     lateinit var unit:String
-    
+
 }
