@@ -22,5 +22,9 @@ interface ItemDao {
     @Update
     fun buyFlagItem(item: Item)
 
+    @Update
+    fun buyAllItems()
+    
+
 
 }
