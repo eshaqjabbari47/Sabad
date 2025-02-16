@@ -4,11 +4,11 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "tbl_Items")
-class Item {
+class Item (
     @PrimaryKey(autoGenerate = true)
-     var id:Int = 0
-    lateinit var name:String
-    lateinit var amount:String
-    lateinit var unit:String
+    var id:Int?=null,
+    var name:String,
+    var amount:String,
+    var unit:String,
     var isBought:Boolean=false
-}
+)
